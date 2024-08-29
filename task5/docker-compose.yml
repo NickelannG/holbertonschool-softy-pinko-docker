@@ -22,3 +22,6 @@ services:
     image: softy-pinko-proxy
     ports: 
       - "80:80"
+    depends_on:
+      - back-end
+      - front-end
